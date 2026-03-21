@@ -1,1 +1,11 @@
-# repo-template
+
+  # PV Architektur
+
+  This is a code bundle for PV Architektur. The original project is available at https://www.figma.com/design/WWZjz5PntxsQ5qANjbKHYe/PV-Architektur.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
