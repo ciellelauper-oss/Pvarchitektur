@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router';
 import { useState, useEffect, useRef } from 'react';
-import logo from 'figma:asset/aa6f2871e841c9284c47fd60ff0fbed76f30d699.png';
 import { useMobileMenu } from '../context/MobileMenuContext';
 import { Search, Menu } from 'lucide-react';
 import { useNavigate } from 'react-router';
@@ -63,7 +62,7 @@ export function Header() {
                 className="no-underline flex items-center"
                 onClick={handleNavClick}
               >
-                <img src={logo} alt="PV Architektur Logo" className="h-6 w-auto" />
+                <img src="/logo.png" alt="PV Architektur Logo" className="h-6 w-auto" />
               </Link>
               
               {/* Desktop Navigation */}
@@ -162,7 +161,7 @@ export function Header() {
         </div>
       </header>
 
-      {/* Mobile Menu Overlay - Covers everything below header */}
+      {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div 
           className="fixed top-[57px] left-0 right-0 bottom-0 z-40 bg-black md:hidden flex flex-col"
